@@ -7,12 +7,18 @@
 //
 
 #import "ListViewCell.h"
-
+#import "Feed.h"
+#import "Chanels.h"
 @implementation ListViewCell
 
--(void)build
+-(void)buildWithFeed:(Feed*)feed
 {
-    
+    [titleLabel setText:feed.title];
+}
+
+-(void)buildWithChanel:(Chanels*)chanel
+{
+    [titleLabel setText:chanel.title];
 }
 
 @end

@@ -10,4 +10,10 @@
 
 @implementation ObjectViewController
 
+-(void)viewDidLoad
+{
+    self.title = @"Новость";
+    [webView loadHTMLString:self.info baseURL:nil];
+}
+
 @end

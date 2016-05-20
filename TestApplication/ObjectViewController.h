@@ -9,5 +9,8 @@
 #import "BaseViewController.h"
 
 @interface ObjectViewController : BaseViewController
-
+{
+    IBOutlet UIWebView *webView;
+}
+@property (nonatomic, weak) NSString *info;
 @end

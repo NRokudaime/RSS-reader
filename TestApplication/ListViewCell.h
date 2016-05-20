@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Feed;
+@class Chanels;
 @interface ListViewCell : UITableViewCell
 {
     IBOutlet UILabel *titleLabel;
 }
+
+-(void)buildWithFeed:(Feed*)feed;
+
+-(void)buildWithChanel:(Chanels*)chanel;
+
 @end
